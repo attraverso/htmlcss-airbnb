@@ -1,0 +1,54 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    width: 50%;
+    margin: auto;
+}
+
+.imagebox {
+    width: 800px;
+    height: 600px;
+    background-color: blue;
+    margin-bottom: 10px;
+}
+
+.layover {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.imagebox:first-child {
+    background:
+    url(https://hdwallpapers.imgix.net/freestockphotos-36301564132964sx06xbeber.jpg?auto=compress&cs=tinysrgb&dpr=1);
+    background-size: cover;
+}
+
+.imagebox:nth-child(2) {
+    background:
+    url(https://image.winudf.com/v2/image/Y29tLmphY2sucHV6emxlLlR3aWxpZ2h0X3NjcmVlbnNob3RzXzBfYmY3NmI1NmE/screen-0.jpg?fakeurl=1&type=.jpg);
+    background-size: cover;
+}
+
+.imagebox:last-child {
+    background:
+    url(https://wallup.net/wp-content/uploads/2017/11/22/406583-desert-748x421.jpg);
+    background-size: cover;
+}
+
+.textbox {
+    color: white;
+    font-size: 150px;
+    font-family: "Courier New";
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
