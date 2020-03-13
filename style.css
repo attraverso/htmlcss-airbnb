@@ -4,14 +4,14 @@
 }
 
 main {
-    width: 50%;
+    width: 60%;
     margin: auto;
+    position: relative;
 }
 
 .imagebox {
-    width: 800px;
-    height: 600px;
-    background-color: blue;
+    width: 400px;
+    height: 300px;
     margin-bottom: 10px;
 }
 
@@ -24,31 +24,64 @@ main {
     left: 0;
 }
 
-.imagebox:first-child {
-    background:
-    url(https://hdwallpapers.imgix.net/freestockphotos-36301564132964sx06xbeber.jpg?auto=compress&cs=tinysrgb&dpr=1);
-    background-size: cover;
-}
-
-.imagebox:nth-child(2) {
-    background:
-    url(https://image.winudf.com/v2/image/Y29tLmphY2sucHV6emxlLlR3aWxpZ2h0X3NjcmVlbnNob3RzXzBfYmY3NmI1NmE/screen-0.jpg?fakeurl=1&type=.jpg);
-    background-size: cover;
-}
-
-.imagebox:last-child {
-    background:
-    url(https://wallup.net/wp-content/uploads/2017/11/22/406583-desert-748x421.jpg);
-    background-size: cover;
-}
-
 .textbox {
     color: white;
-    font-size: 150px;
+    font-size: 80px;
     font-family: "Courier New";
     position: absolute;
     top:50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
 
+.column-left {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.column-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.column-right .imagebox {
+    background-color: purple;
+}
+
+#ocean {
+    background:
+    url("https://hdwallpapers.imgix.net/freestockphotos-36301564132964sx06xbeber.jpg?auto=compress&cs=tinysrgb&dpr=1");
+    background-size: cover;
+}
+
+#forest {
+    background:
+    url("https://image.winudf.com/v2/image/Y29tLmphY2sucHV6emxlLlR3aWxpZ2h0X3NjcmVlbnNob3RzXzBfYmY3NmI1NmE/screen-0.jpg?fakeurl=1&type=.jpg");
+    background-size: cover;
+}
+
+#desert {
+    background:
+    url("https://wallup.net/wp-content/uploads/2017/11/22/406583-desert-748x421.jpg");
+    background-size: cover;
+}
+
+#mountain {
+    background:
+    url("https://www.artisansofleisure.com/wp-content/uploads/2019/07/Private-Dolomites-tours-8.jpg");
+    background-size: cover;
+}
+
+#lake {
+    background:
+    url("https://media.tacdn.com/media/attractions-splice-spp-674x446/07/36/00/77.jpg");
+    background-size: cover;
+}
+
+#jungle {
+    background:
+    url("https://www.telegraph.co.uk/content/dam/Travel/2018/September/El-Yunque-morning-mist-iStock-535499464-xlarge.jpg");
+    background-size: cover;
 }
