@@ -1,12 +1,59 @@
 * {
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-main {
+/* header properties */
+
+header {
+    width: 100%;
+    height: 80px;
+    background-color: #082247;
+    position: fixed;
+    z-index: 10;
+}
+
+.logo {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+}
+
+.logo img {
+    width: 100px;
+}
+
+.whiteline {
+    width: 100%;
+    height: 5px;
+    background-color: white;
+    margin-top: 80px;
+    position: fixed;
+    z-index: 10;
+}
+
+/* main content properties */
+
+section {
     width: 60%;
     margin: auto;
     position: relative;
+    top: 100px;
+}
+
+.column-left {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.column-right {
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 .imagebox {
@@ -34,20 +81,10 @@ main {
     transform: translate(-50%, -50%);
 }
 
-.column-left {
-    position: relative;
-    top: 0;
-    left: 0;
-}
-
-.column-right {
-    position: absolute;
-    top: 0;
-    right: 0;
-}
-
-.column-right .imagebox {
-    background-color: purple;
+#forest {
+    background:
+    url("https://image.winudf.com/v2/image/Y29tLmphY2sucHV6emxlLlR3aWxpZ2h0X3NjcmVlbnNob3RzXzBfYmY3NmI1NmE/screen-0.jpg?fakeurl=1&type=.jpg");
+    background-size: cover;
 }
 
 #ocean {
@@ -56,15 +93,9 @@ main {
     background-size: cover;
 }
 
-#forest {
+#jungle {
     background:
-    url("https://image.winudf.com/v2/image/Y29tLmphY2sucHV6emxlLlR3aWxpZ2h0X3NjcmVlbnNob3RzXzBfYmY3NmI1NmE/screen-0.jpg?fakeurl=1&type=.jpg");
-    background-size: cover;
-}
-
-#desert {
-    background:
-    url("https://wallup.net/wp-content/uploads/2017/11/22/406583-desert-748x421.jpg");
+    url("https://www.telegraph.co.uk/content/dam/Travel/2018/September/El-Yunque-morning-mist-iStock-535499464-xlarge.jpg");
     background-size: cover;
 }
 
@@ -74,14 +105,14 @@ main {
     background-size: cover;
 }
 
-#lake {
+#desert {
     background:
-    url("https://media.tacdn.com/media/attractions-splice-spp-674x446/07/36/00/77.jpg");
+    url("https://wallup.net/wp-content/uploads/2017/11/22/406583-desert-748x421.jpg");
     background-size: cover;
 }
 
-#jungle {
+#lake {
     background:
-    url("https://www.telegraph.co.uk/content/dam/Travel/2018/September/El-Yunque-morning-mist-iStock-535499464-xlarge.jpg");
+    url("https://media.tacdn.com/media/attractions-splice-spp-674x446/07/36/00/77.jpg");
     background-size: cover;
 }
